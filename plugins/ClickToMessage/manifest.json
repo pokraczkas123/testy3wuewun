@@ -9,6 +9,6 @@
   ],
   "main": "./src/index.tsx",
   "vendetta": {
-    "icon": "ChatCheckIcon"
+    "icon": "ic_audit_log_24px"
   }
 }
