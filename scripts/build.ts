@@ -150,7 +150,7 @@ for (const plugin of plugins.length ? plugins : await readdir('./plugins')) {
 
         await bundle.close()
 
-        manifest.main = 'index.js'
+        manifest.main = './index.js'
         manifest.hash = await hasher.update(code).digest('hex')
         await Bun.write(`./dist/${plugin}/manifest.json`, JSON.stringify(manifest))
 

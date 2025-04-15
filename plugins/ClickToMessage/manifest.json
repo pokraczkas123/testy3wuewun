@@ -7,8 +7,5 @@
       "id": "711850927199617104"
     }
   ],
-  "main": "./src/index.tsx",
-  "vendetta": {
-    "icon": "ic_audit_log_24px"
-  }
+  "main": "./src/index.tsx"
 }
