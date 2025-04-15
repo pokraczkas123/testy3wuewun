@@ -44,6 +44,7 @@ const unpatches: UnpatchFunction[] = []
 
 export default {
     onLoad: () => {
+        console.log('[ClickToMessage] Plugin loading started...');
         // Remove specific patches
         // const ChatInputSendButton = findByTypeDisplayNameLazy('ChatInputSendButton')
         // const ChatInputActions = findByTypeDisplayNameLazy('ChatInputActions')
@@ -62,9 +63,11 @@ export default {
         // Add any future patches here using unpatches.push(patcher...)
     },
     onUnload: () => {
+        console.log('[ClickToMessage] Plugin unloading...');
         for (const unpatch of unpatches) unpatch()
     },
     settings: () => {
+        console.log('[ClickToMessage] Settings accessed...');
         // Return null or a basic placeholder for settings
         return null
         // Remove the previous settings UI implementation
